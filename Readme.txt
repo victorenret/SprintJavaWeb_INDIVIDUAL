@@ -22,6 +22,7 @@ Contraseña de usuario base de datos:
      pass123
 
 LINK REPOSITORIO GITHUB:
+https://github.com/victorenret/SprintJavaWeb_INDIVIDUAL.git
 
 
 
