@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <display-name>Yo_Quiero_Otro_Mundo_INDIVIDUAL</display-name>
+
+
+    <!-- PARA QUE ABRA LA PAGINA "INICIO" AL PRINCIPIO-->
+    <welcome-file-list>
+        <welcome-file>Inicio</welcome-file>
+    </welcome-file-list>
+
+
+    <!-- SERVLETS -->
+    <servlet>
+        <servlet-name>Inicio</servlet-name>
+        <servlet-class>controller.InicioServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Contenido</servlet-name>
+        <servlet-class>controller.ContenidoServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet>
+        <servlet-name>CrearParticipantes</servlet-name>
+        <servlet-class>controller.CrearParticipantesServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Home</servlet-name>
+        <servlet-class>controller.HomeServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet>
+        <servlet-name>ListarParticipantes</servlet-name>
+        <servlet-class>controller.ListarParticipantesServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <servlet>
+        <servlet-name>Tablas</servlet-name>
+        <servlet-class>controller.TablasServlet</servlet-class>
+        <async-supported>true</async-supported>
+    </servlet>
+
+    <!-- MAPPING -->
+    <servlet-mapping>
+        <servlet-name>Inicio</servlet-name>
+        <url-pattern>/Inicio</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Contenido</servlet-name>
+        <url-pattern>/Contenido</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>CrearParticipantes</servlet-name>
+        <url-pattern>/CrearParticipantes</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Home</servlet-name>
+        <url-pattern>/Home</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>ListarParticipantes</servlet-name>
+        <url-pattern>/ListarParticipantes</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>Tablas</servlet-name>
+        <url-pattern>/Tablas</url-pattern>
+    </servlet-mapping>
+
+    <!-- CONFIGURACION DE SESION -->
+    <session-config>
+        <session-timeout>35</session-timeout>
+    </session-config>
+
+</web-app>
